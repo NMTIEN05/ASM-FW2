@@ -3,7 +3,7 @@ export interface Iuser {
     name: string,
     sdt: string, 
     email:string,
-    password: number,
+    password: string,
 }
 export type IRegister = Omit<Iuser, "id">
 export type ILogin = Pick<Iuser, "email"|"password">
